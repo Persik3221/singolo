@@ -209,7 +209,7 @@
     letter-spacing: 0.19px;
 }
 
-.about_us_faces{
+.about_us_faces {
     width: 96%;
     height: 443px;
     display: flex;
@@ -221,35 +221,40 @@
     height: 6px;
     background-color: #ffffff;
 }
-.name{
+
+.name {
     margin-top: 11px;
     margin-bottom: 9px;
     font-size: 18px;
-line-height: 18px;
-color: #666d89;
-font-family: "Lato-M";
-font-weight: 900;
+    line-height: 18px;
+    color: #666d89;
+    font-family: "Lato-M";
+    font-weight: 900;
 }
-.third{
+
+.third {
     letter-spacing: 0.7px;
 }
-.about{
+
+.about {
     width: 301px;
-height: 66px;
-font-size: 12px;
-line-height: 22px;
-color: #767e9e;
-font-family: "Lato";
-font-weight: 400;
-text-align: justify;
+    height: 66px;
+    font-size: 12px;
+    line-height: 22px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: justify;
 }
-.profiles{
+
+.profiles {
     margin-left: 1px;
     display: flex;
     justify-content: space-between;
     width: 154px;
 }
-.profile_circle{
+
+.profile_circle {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -259,7 +264,8 @@ text-align: justify;
     border: 1px solid #666d89;
     cursor: pointer;
 }
-.profile_circle:hover{
+
+.profile_circle:hover {
     background-color: #b3b3b9;
     border: 1px solid #000000;
 }
