@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    width: 1020px;
+    height: 1604px;
+    margin: 0 auto;
+    background-color: #e25819;
+    cursor: default;
+}
+
+.portfolio_block {
+    height: 870px;
+    width: 100%;
+    background-color: #2d303a;
+}
+
+.portfolio {
+    height: 864px;
+    width: 96%;
+    margin-left: 41px;
+}
+
+.title_block {
+    height: 45px;
+    width: 100%;
+}
+
+.title {
+    padding-top: 70px;
+    font-size: 30px;
+    line-height: 18px;
+    color: #666d89;
+    font-family: "Lato-M";
+    letter-spacing: 0.8px;
+    font-weight: 900;
+    text-align: left;
+}
+
+.portfolio_info {
+    margin-top: 70px;
+    width: 940px;
+    height: 31px;
+    font-size: 17px;
+    line-height: 30px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 300;
+    text-align: left;
+    letter-spacing: 0.1px;
+}
+
+.switcher_item {
+    height: 22px;
+    border-radius: 5px;
+    background-color: #0f0f0f;
+    border: 1px solid #666d89;
+    cursor: pointer;
+}
+
+.switcher_item:hover {
+    border: 1px solid #c5c5c5;
+}
+
+.switcher_item:hover .switcher_link {
+    color: #dedede;
+}
+
+.switcher_link {
+    margin: 0 6px;
+    font-size: 12px;
+    line-height: 22px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: left;
+    text-decoration: none;
+}
+
+.portfolio_bottom {
+    height: 6px;
+    width: 100%;
+    background-color: #323746;
+}
+
+.portfolio_nav {
+    display: flex;
+    align-items: center;
+    width: 287px;
+    height: 40px;
+    margin-bottom: 9px;
+}
+
+.portfolio_switcher {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+.portfolio_images_grid {
+    display: grid;
+    grid-gap: 17px;
+    grid-template: repeat(3, 190px) / repeat(4, 222px);
+}
+
+.portfolio_image_block {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.portfolio_image {
+    position: absolute;
+}
+
+.img1 {
+    top: -10px;
+    left: -9px;
+}
+
+.img2 {
+    top: -42px;
+    left: -82px;
+}
+
+.img3 {
+    top: -1px;
+    left: -10px;
+}
+
+.img4 {
+    top: 0px;
+    left: -22px;
+}
+
+.img5 {
+    top: -15px;
+    left: -10px;
+}
+
+.img6 {
+    top: -4px;
+    left: -15px;
+}
+
+.img7 {
+    top: -39px;
+    left: -29px;
+}
+
+.img8 {
+    top: -31px;
+    left: -22px;
+}
+
+.img9 {
+    top: -2px;
+    left: -17px;
+}
+
+.img10 {
+    top: -112px;
+    left: -141px;
+}
+
+.img11 {
+    top: -174px;
+    left: -143px;
+}
+
+.img12 {
+    top: -59px;
+    left: -33px;
+}
+
+.about_us_block {
+    width: 100%;
+    height: 734px;
+    background-color: #f2f2f2;
+}
+
+.about_us {
+    height: 728px;
+    width: 96%;
+    margin-left: 40px;
+}
+
+.ab {
+    letter-spacing: 0.5px;
+}
+
+.about_us_info {
+    margin-top: 68px;
+    margin-bottom: 48px;
+    width: 940px;
+    height: 57px;
+    font-size: 17px;
+    line-height: 30px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 300;
+    text-align: justify;
+    letter-spacing: 0.19px;
+}
+
+.about_us_faces{
+    width: 96%;
+    height: 443px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about_us_bottom {
+    width: 100%;
+    height: 6px;
+    background-color: #ffffff;
+}
+.name{
+    margin-top: 11px;
+    margin-bottom: 9px;
+    font-size: 18px;
+line-height: 18px;
+color: #666d89;
+font-family: "Lato-M";
+font-weight: 900;
+}
+.third{
+    letter-spacing: 0.7px;
+}
+.about{
+    width: 301px;
+height: 66px;
+font-size: 12px;
+line-height: 22px;
+color: #767e9e;
+font-family: "Lato";
+font-weight: 400;
+text-align: justify;
+}
+.profiles{
+    margin-left: 1px;
+    display: flex;
+    justify-content: space-between;
+    width: 154px;
+}
+.profile_circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 16px;
+    border: 1px solid #666d89;
+    cursor: pointer;
+}
+.profile_circle:hover{
+    background-color: #b3b3b9;
+    border: 1px solid #000000;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url("assets/fonts/Lato-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Lato-M";
+    src: url("assets/fonts/Lato-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Lato-L";
+    src: url("assets/fonts/Lato-Light.ttf");
+}
