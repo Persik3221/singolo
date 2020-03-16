@@ -85,11 +85,13 @@
 
 
 .main {
-    width: 100%;
     height: 592px;
+    width: 100%;
     background-color: #f06c64;
     display: flex;
     align-items: center;
+    overflow: hidden;
+    position: relative;
 }
 
 .pointer {
@@ -99,6 +101,8 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    position: absolute;
+    z-index: 15;
 }
 
 .pointer:hover .arrow {
@@ -106,17 +110,27 @@
 }
 
 .pointer:hover {
-    background-color: #c94549;
+    background-color: #6b6b6b;
+    opacity: 0.5;
 }
 
 .arrow {
     display: block;
     width: 15px;
     height: 15px;
-    border: solid #c94549;
+    border: solid black;
+    opacity: 0.2;
     border-width: 0 6px 6px 0;
     border-radius: 3px;
     display: inline-block;
+}
+.pleft{
+    left:0;
+    top: 0;
+}
+.pright{
+    right: 0px;
+    top: 0;
 }
 
 .left {
@@ -124,6 +138,7 @@
 }
 
 .right {
+    
     transform: rotate(-45deg);
 }
 
@@ -198,10 +213,26 @@
 .screen1_box {
     display: flex;
     justify-content: center;
-
+    position: relative;
     width: 100%;
     height: 333px;
 
+}
+
+.slide_container{
+    width: 100%;
+    height: 100%;
+}
+
+.slide1{
+    width: 909px;
+    height: 100%;
+    margin-left: 111px;
+    background-color: #f06c64;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
 }
 
 .screen1 {
@@ -230,6 +261,36 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+}
+.black_screen_1{
+    width: 188px;
+    height: 333px;
+    background-color: black;
+    z-index: 2;
+    position: absolute;
+    left: 13px;
+    top: 3px;
+    border-radius: 4px;
+}
+
+.black_screen_2{
+    width: 333px;
+    height: 188px;
+    background-color: black;
+    z-index: 2;
+    position: absolute;
+    left: 3px;
+    top: 13px;
+    border-radius: 4px;
+}
+
+.home_button1-circle:hover{
+    background-color: #ffd7d7;
+}
+
+.home_button1-circle:hover .white_square{
+    background-color: #ffd7d7;
 }
 
 .home_button1-square {
@@ -292,6 +353,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .screen {
@@ -483,15 +545,23 @@
     color: #dedede;
 }
 
+.active_item{
+    border: 1px solid #c5c5c5;
+}
+
+.active_item .switcher_link{
+    color: #dedede;
+}
+
 .switcher_link {
     margin: 0 6px;
     font-size: 12px;
     line-height: 22px;
-    color: #767e9e;
     font-family: "Lato";
     font-weight: 400;
     text-align: left;
     text-decoration: none;
+    color: #767e9e;
 }
 
 .portfolio_bottom {
@@ -814,9 +884,9 @@
 .form_title {
     font-size: 19px;
     line-height: 18px;
-    color: #f0d8d9;
     font-family: "Lato";
     font-weight: 900;
+    color: #f0d8d9;
     text-align: left;
     margin-bottom: 11px;
 }
@@ -922,7 +992,109 @@
     border: 1px solid #000000;
 }
 
+.active_link{
+    color: #f06c64;
+}
+.active_img{
+    border: #F06C64 solid 5px;
+}
+.modal{
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal_shadow{
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.6;
+    background-color: #494e62;
+    position: fixed;
+}
+.off{
+    visibility: hidden;
+}
+.ok{
+    width: 100px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fdbeba;
+}
+.modal_content{
+    z-index: 10;
+    width: 400px;
+    height: 400px;
+    border-radius: 20px;
+    display: flex;
+    opacity: 1;
+    justify-content: center;
+    align-items: center;
+    background-color: #f06c64;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 18px;
+    font-family: "Lato";
+    font-weight: 900;
+}
+.slide{
+    display: none;
+    position: relative;
+    animation: 0.5s ease-in-out;
+}
 
+.slide_container{
+    position: relative;
+    overflow: hidden;
+}
+
+.active_slide,
+.next_slide{
+    display: flex;
+}
+.next_slide{
+    position: absolute;
+    top: 0;
+}
+
+.to_left{
+    animation-name: left;
+}
+.to_right{
+    animation-name: right;
+    animation-direction: reverse;
+}
+.from_left{
+    animation-name: left;
+    animation-direction: reverse;
+}
+.from_right{
+    animation-name: right;
+}
+
+@keyframes left{
+    from{
+        left: 0;
+    }
+    to{
+        left: -100%;
+    }
+}
+@keyframes right{
+    from{
+        left: 100%;
+    }
+    to{
+        left: 0;
+    }
+}
 
 @font-face {
     font-family: "Lato";
