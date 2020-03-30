@@ -3,12 +3,22 @@
     padding: 0;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .body {
     width: 1020px;
     height: 3524px;
     margin: 0 auto;
     background-color: #767981;
     cursor: default;
+    position: relative;
+}
+
+#home{
+    width: 1px;
+    height: 89px;
 }
 
 .header {
@@ -18,6 +28,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 .header_bottom {
@@ -242,6 +256,7 @@
     height: 333px;
     background-image: url(./assets/phone1.svg);
     background-position: -14px -135px;
+    cursor: pointer;
 }
 
 .home_button1_box {
@@ -272,6 +287,7 @@
     left: 13px;
     top: 3px;
     border-radius: 4px;
+    cursor: pointer;
 }
 
 .black_screen_2{
@@ -283,6 +299,7 @@
     left: 3px;
     top: 13px;
     border-radius: 4px;
+    cursor: pointer;
 }
 
 .home_button1-circle:hover{
@@ -363,6 +380,7 @@
     border-radius: 4px;
     background-image: url(assets/phone2.svg);
     background-position: -125px -119px;
+    cursor: pointer;
 }
 
 .home_button_box {
@@ -443,8 +461,6 @@
     grid-template: 86px 86px / repeat(3, 1fr);
 
 }
-
-.qwe{}
 
 .circle {
     width: 55px;
@@ -1081,6 +1097,7 @@
     animation-name: right;
 }
 
+
 @keyframes left{
     from{
         left: 0;
@@ -1112,3 +1129,214 @@
     font-family: "Lato-L";
     src: url("assets/fonts/Lato-Light.ttf");
 }
+
+@media screen and (min-width: 1020px) {
+    .body {
+      background-color: #F06C64;
+    }
+    .footer{
+        justify-content: center;
+    }
+    .footer_contacts{
+        margin: 0;
+    }
+    .copyright{
+        display: none;
+    }
+    .quote_info{
+        text-align: left;
+        letter-spacing: 0px;
+        font-size: 18px;
+    }
+    .textarea{
+        height: 154px;
+    }
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 1020px) {
+    .body {
+      width: 100%;
+      height: 3699px;
+    }
+    .main{
+        height: 452px;
+    }
+    .pointer{
+        width: 11%;
+    }
+    .phone1_box{
+        width: 180px;
+        height: 370px
+    }
+    .one{
+        width: 162px;
+        height: 345px;
+    }
+    .screen1_box{
+        height: 253px;
+    }
+    .shadow1{
+        background-image: url(assets/phone-vertical-shadow.png);
+    }
+    .camera1_box{
+        height: 27px;
+    }
+    .phone{
+        border-radius: 18px;
+    }
+    .speaker1_box{
+        height: 16px;
+    }
+    .speaker1{
+        width: 27px;
+        height: 3px;
+    }
+    .screen1{
+        height: 100%;
+        width: 146px;
+    }
+    .phone2_box{
+        margin-left: 55px;
+        height: 190px;
+        width: 364px;
+    }
+    .two{
+        width: 345px;
+        height: 163px;
+    }
+    .home_button1_box{
+        height: 43px;
+    }
+    .home_button_box{
+        width: 43px;
+    }
+    .camera{
+        width: 27px;
+    }
+    .speaker{
+        height: 27px;
+        width: 3px;
+    }
+    .speaker_box{
+        width: 16px;
+    }
+    .screen_box{
+        width: 251px;
+    }
+    .screen{
+        height: 142px;
+        border-radius: 2px;
+        border-width: 2px;
+    }
+    .shadow2{
+        background-image: url(assets/phone-horizontal-shadow.png);
+    }
+    .home_button1-circle{
+        height: 31.5px;
+        width: 31.5px;
+        border-radius: 16px;
+    }
+    .home_button1-square{
+        height: 12px;
+        width: 12px;
+
+    }
+    .white_square{
+        width: 6px;
+        height: 7px;
+        border-radius: 1px;
+    }
+    .slide1{
+        width: 78.12%;
+        margin-left: 11%;
+        justify-content: space-between;
+    }
+    .slide2{
+        width: 100%;
+        height: 100%;
+    }
+    .info{
+        width: 89.45%;
+    }
+    .services{
+        height: 674px;
+    }
+    .services-description-grid{
+        grid-template: repeat(3,1fr) / repeat(2, 300px);
+        height: 390px;
+        
+    }
+    .portfolio_block{
+        height: 1094px;
+    }
+    .portfolio{
+        height: 1088px;
+        width: 94%;
+    }
+    .portfolio_info{
+        width: 94%;
+    }
+    .about_us_block{
+        height: 669px;
+    }
+    .about_us{
+        width: 94%;
+    }
+    .about_us_info{
+        width: 94%;
+    }
+    .face{
+        width: 219px;
+        height: 219px;
+    }
+    .about{
+        width: 219px;
+        height: 72px;
+    }
+    .portfolio_images_grid{
+        grid-template: repeat(4, 185px) / repeat(3, 216px);
+    }
+    .quote_block{
+        height: 631px;
+    }
+    .quote{
+        width: 94%;
+        height: 559px;   
+    }
+    .quote_info{
+        height: 70px;
+    }
+    .quote_form{
+        width: 94%;
+    }
+    .form_block{
+        width: 61%;
+    }
+    .input{
+        width: 100%;
+    }
+    .textarea{
+        height: 159px;
+    }
+    .text{
+        margin-bottom: 12px;
+    }
+    .email{
+        margin-bottom: 12px;
+    }
+    .subject{
+        margin-bottom: 12px;
+    }
+  }
+  
+  @media screen and (min-width: 375px) and (max-width: 768px) {
+    .body {
+      background-color: #4c00ff;
+    }
+  }
+  
+  @media screen and (max-width: 375px) {
+    .body {
+      background-color: #ff00dd;
+    }
+  }
